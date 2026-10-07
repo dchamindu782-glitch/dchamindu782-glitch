@@ -17,8 +17,8 @@
 </p>
 
 <p align="left">
-  <a href="https://github.com/ryo-ma/github-profile-trophy">
-    <img src="https://github-profile-trophy.vercel.app/?username=dchamindu782-glitch" alt="dchamindu782" />
+  <a href="https://github.com/ryo-ma/github-profile-trophy" target="_blank">
+    <img src="github.png" alt="GitHub Trophy" width="30px" & username=dchamindu782"/>
   </a>
 </p>
 
