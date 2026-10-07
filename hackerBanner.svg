@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 480" width="100%" height="100%">
+  <defs>
+    <style>
+      @keyframes rainDrop1 { 0% { transform: translateY(-300px); opacity: 0; } 50% { opacity: 0.9; } 100% { transform: translateY(500px); opacity: 0; } }
+      @keyframes rainDrop2 { 0% { transform: translateY(-350px); opacity: 0; } 50% { opacity: 0.8; } 100% { transform: translateY(520px); opacity: 0; } }
+      @keyframes rainDrop3 { 0% { transform: translateY(-280px); opacity: 0; } 50% { opacity: 1; } 100% { transform: translateY(500px); opacity: 0; } }
+      @keyframes pulseGlow { 0%, 100% { opacity: 0.75; transform: scale(1); } 50% { opacity: 1; transform: scale(1.05); } }
+      @keyframes laptopPulse { 0%, 100% { opacity: 0.85; } 50% { opacity: 0.55; } }
+      @keyframes breathingHacker { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-3px); } }
+
+      .rain-col-1 { animation: rainDrop1 3.5s linear infinite; font-family: monospace; font-size: 14px; fill: #00d8f6; letter-spacing: 2px; }
+      .rain-col-2 { animation: rainDrop2 4.2s linear infinite 0.8s; font-family: monospace; font-size: 14px; fill: #00b4d8; letter-spacing: 2px; }
+      .rain-col-3 { animation: rainDrop3 3.8s linear infinite 1.6s; font-family: monospace; font-size: 14px; fill: #48cae4; letter-spacing: 2px; }
+
+      .question-mask {
+        animation: pulseGlow 2.8s ease-in-out infinite;
+        transform-origin: 425px 190px;
+        filter: drop-shadow(0 0 12px #00e5ff) drop-shadow(0 0 25px #00a8cc);
+      }
+      .hacker-body {
+        animation: breathingHacker 4s ease-in-out infinite;
+        transform-origin: 425px 320px;
+      }
+      .laptop-glow {
+        animation: laptopPulse 2s ease-in-out infinite alternate;
+      }
+    </style>
+
+    <!-- Gradients -->
+    <radialGradient id="bgGlow" cx="50%" cy="45%" r="65%">
+      <stop offset="0%" stop-color="#05283b" stop-opacity="0.9" />
+      <stop offset="60%" stop-color="#021018" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#01060a" stop-opacity="1" />
+    </radialGradient>
+
+    <radialGradient id="screenLight" cx="50%" cy="100%" r="90%">
+      <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.55" />
+      <stop offset="50%" stop-color="#00a8cc" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <linearGradient id="hoodRim" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00e5ff" stop-opacity="0.45" />
+      <stop offset="50%" stop-color="#05202e" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.95" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="850" height="480" fill="url(#bgGlow)" rx="12" />
+
+  <!-- Matrix Digital Code Columns -->
+  <g opacity="0.45">
+    <text x="70" y="0" class="rain-col-1">1 0 1 0 1 1 0 0 1 0 1</text>
+    <text x="130" y="0" class="rain-col-2">0 1 1 0 1 0 0 1 1 1 0</text>
+    <text x="190" y="0" class="rain-col-3">1 1 0 0 1 1 0 1 0 0 1</text>
+    <text x="250" y="0" class="rain-col-1">0 0 1 0 1 0 1 1 0 1 0</text>
+    <text x="600" y="0" class="rain-col-2">1 0 1 1 0 0 1 0 1 1 0</text>
+    <text x="660" y="0" class="rain-col-3">0 1 0 1 1 0 1 0 0 1 1</text>
+    <text x="720" y="0" class="rain-col-1">1 1 1 0 0 1 0 1 1 0 1</text>
+    <text x="780" y="0" class="rain-col-2">0 0 1 1 0 1 0 0 1 0 1</text>
+  </g>
+
+  <!-- Ambient Light Reflection on Hacker -->
+  <ellipse cx="425" cy="310" rx="200" ry="140" fill="url(#screenLight)" />
+
+  <!-- Hacker Silhouette Group -->
+  <g class="hacker-body">
+    <!-- Outer Shoulders / Body -->
+    <path d="M 230 430 C 240 330, 310 270, 360 250 L 490 250 C 540 270, 610 330, 620 430 Z" fill="#040b11" />
+    <path d="M 230 430 C 240 330, 310 270, 360 250 L 490 250 C 540 270, 610 330, 620 430 Z" fill="none" stroke="#00d8f6" stroke-width="1.5" stroke-opacity="0.3" />
+
+    <!-- Hood Outline -->
+    <path d="M 345 250 C 330 180, 360 100, 425 100 C 490 100, 520 180, 505 250 C 485 275, 365 275, 345 250 Z" fill="#02070b" stroke="url(#hoodRim)" stroke-width="3" />
+
+    <!-- Face Void / Inner Hood -->
+    <ellipse cx="425" cy="195" rx="55" ry="70" fill="#000000" stroke="#00e5ff" stroke-width="1.5" stroke-opacity="0.4" />
+
+    <!-- Glowing Question Mark Feature -->
+    <g class="question-mask">
+      <path d="M 408 170 C 408 152, 415 142, 425 142 C 438 142, 447 151, 447 163 C 447 175, 439 181, 431 188 C 424 194, 421 200, 421 210 L 429 210 C 429 203, 432 199, 438 194 C 448 185, 456 177, 456 163 C 456 146, 442 133, 425 133 C 410 133, 399 146, 399 170 Z" fill="#00f2fe" />
+      <circle cx="425" cy="225" r="5.5" fill="#00f2fe" />
+    </g>
+
+    <!-- Arms resting toward laptop -->
+    <path d="M 255 425 L 340 375 L 365 425 Z" fill="#03090e" opacity="0.9" />
+    <path d="M 595 425 L 510 375 L 485 425 Z" fill="#03090e" opacity="0.9" />
+  </g>
+
+  <!-- Laptop Back Panel (Facing Front) -->
+  <g class="laptop-glow">
+    <rect x="335" y="340" width="180" height="100" rx="8" fill="#040b11" stroke="#00e5ff" stroke-width="1.8" stroke-opacity="0.75" />
+    <!-- Laptop Status LED / Minimal Brand Indicator -->
+    <circle cx="425" cy="385" r="4.5" fill="#00f2fe">
+      <animate attributeName="opacity" values="1;0.4;1" dur="1.5s" repeatCount="indefinite" />
+    </circle>
+  </g>
+
+  <!-- Desk Surface & Reflected Glow Line -->
+  <rect x="0" y="428" width="850" height="52" fill="#010609" />
+  <line x1="0" y1="428" x2="850" y2="428" stroke="#00d8f6" stroke-width="2" stroke-opacity="0.7" />
+  <ellipse cx="425" cy="430" rx="140" ry="8" fill="#00f2fe" opacity="0.45" />
+</svg>
+
