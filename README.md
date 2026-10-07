@@ -1,5 +1,5 @@
 <p align="center">
-  <!-- Cyber Security Hacker Banner -->
+  
   <img src="cyber-hacker.jpg" alt="Cyber Security Hacker" width="700px" style="border-radius: 10px;" />
 </p>
 
