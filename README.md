@@ -18,11 +18,11 @@
 
 <p align="left">
   <a href="https://github.com/ryo-ma/github-profile-trophy">
-    <img src="https://github-profile-trophy.vercel.app/?username=dchamindu782" alt="dchamindu782" />
+    <img src="https://github-profile-trophy.vercel.app/?username=dchamindu782-glitch" alt="dchamindu782" />
   </a>
 </p>
 
-- 🌱 I’m currently learning **Cyber Security**
+- 🧭 I’m currently learning **Cyber Security**
 - 💬 Ask me about **Java**
 - 📫 How to reach me **dchamindu782@gmail.com**
 
