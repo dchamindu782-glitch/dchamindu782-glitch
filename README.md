@@ -1,6 +1,6 @@
 <p align="center">
-  <!-- Hacker Silhouette Animated Banner -->
-  <img src="./hacker-banner.svg" alt="Cyber Security Hacker" width="700px" />
+  <!-- Cyber Security Hacker Banner -->
+  <img src="cyber-hacker.jpg" alt="Cyber Security Hacker" width="700px" style="border-radius: 10px;" />
 </p>
 
 <h1 align="center">Hi 👋, I'm Chamindu Dilshan</h1>
@@ -51,5 +51,5 @@
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=dchamindu782&show_icons=true&locale=en&layout=compact" alt="dchamindu782" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=dchamindu782-glitch&show_icons=true&locale=en&layout=compact" alt="dchamindu782" />
 </p>
